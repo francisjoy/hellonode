@@ -9,6 +9,14 @@ build:
     build_file: none
     output_files: output/*.zip
     image_template: node-14.16
+    args:
+      SONARQUBE: enabled
+      #SONAR_LOGIN_TOKEN: $${build.token.sonar}
+      SONAR_TOKEN: c76f61f63f557e75827a57ffcfcd53ce0f70ded3
+      SONAR_HOST_URL: https://francisjoy-dev-sonarqube-8-2.038c839d.lowtouch.cloud
+      SONAR_PROJECT_KEY: node_sonar
+      SCAN_LANG: node
+      NODE_MODULES: typescript
 
 
 deploy:
