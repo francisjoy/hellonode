@@ -15,6 +15,7 @@ build:
       SONAR_LOGIN_TOKEN: 9bc26f04e6d724e81eca1c0231bdf902e55b4c24
       SONAR_HOST_URL: https://francisjoy-dev-sonarqube-8-2.038c839d.lowtouch.cloud
       SONAR_PROJECT_KEY: node_sonar
+      SONAR_PROJECT_NAME: node_project
       SCAN_LANG: node
       NODE_MODULES: typescript
 
