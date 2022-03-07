@@ -10,7 +10,7 @@ build:
     output_files: output/*.zip
     image_template: node-14.16
     args:
-      SONARQUBE: enabled
+      SONARQUBE: disabled
       #SONAR_LOGIN_TOKEN: $${build.token.sonar}
       SONAR_LOGIN_TOKEN: ec5332122c9139ea9efd62aaca6cb66f2a56b30b
       SONAR_HOST_URL: https://francisjoy-dev-sonarqube-8-2.038ecc66.lowtouch.cloud/
@@ -26,6 +26,7 @@ deploy:
     port:
     - 8080
     - 80
+    - 3000
 
 
 properties:
